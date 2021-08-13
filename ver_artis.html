@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+	<link rel="stylesheet" type="text/css" href="ver_artis.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+	<title>verifikasi</title>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="forum">
+			<form name="myForm" action=" ">
+			<h1 class="contact-heading">Sign Up</h1>
+			<div><label class="u">Username</label></div>
+			<div class="textbox"><input type="text" name="nama" id="nama"></div>
+			<br>
+			<div ><label class="u">Profile Picture</label></div>
+			<div class="textbox"><input type="image" name="image" id ="image"></div>
+			<br>
+			<div><label class="u">Description</label></div>
+			<div class="textbox"><input type="text" name="description" id="description" min="8"></div>
+			<br>
+			<div><label class="u">Language</label></div>
+			<div class="textbox"><input list="language" name="language"  min="8">
+			<datalist id="language">
+				<option value="Indonesian">
+				<option value="English">
+				<option value="Arabic">
+			</datalist> 
+			</div>
+			<br>
+			<div><label class="u">Skill</label></div>
+			<div class="textbox"><input type="text" name="skill" id="skill" min="8">
+			</div>
+			<br>
+			<div><label class="u">Level</label></div>
+			<div class="textbox"><input list="level" name="level"  min="8">
+			<datalist id="level">
+				<option value="Amatir">
+				<option value="Expert">
+				<option value="Basic">
+			</datalist> 
+			</div>
+			</form>
+			<br>
+			<div class="b"><button onclick="validateForm()" class="button">Submit</button></div>
+			<div class="b"><button onclick="closeWindow()" class="button">Back</button></div>
+		</div>
+	</div>
+	<script>
+		function validateForm() {
+			var nama = document.getElementById("nama").value;
+			var image = document.getElementById("image").value;
+			var desc = document.getElementById("description").value;
+			var lang = document.getElementById("language").value;
+			var skill = document.getElementById("skill").value;
+			var level = document.getElementById("level").value;
+	    if(nama===""){
+			alert("Kolom username wajib diisi");
+		}
+		else if(desc===""){
+			alert("Kolom deskripsi wajib diisi");
+		}
+		else if(lang==="" ){
+			alert("Kolom bahasa wajib diisi");
+		}
+		else if(skill==="" ){
+			alert("Kolom skill wajib diisi");
+		}
+		else if(level==="" ){
+			alert("Kolom level wajib diisi");
+		}
+		else{
+			var konfir = window.confirm("Apakah anda yakin?");
+			var text="";
+			if(konfir === true){
+				
+				window.open("ptofileArtist.html", "_self");
+			}
+			document.getElementById("hasil").innerHTML = text;
+			}
+    }
+    	function closeWindow() {
+    		window.open("profilPengguna.html", "_self");
+			}
+    	
+</script>
+</body>
+</html>

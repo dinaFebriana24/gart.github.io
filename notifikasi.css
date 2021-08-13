@@ -1,0 +1,45 @@
+*{
+	font-family: sans-serif;
+}
+label{
+	font-size: 18px;
+}
+button{
+	background-color: rgb(255, 255, 255);
+	border : 1px solid rgb(1, 1, 1);
+}
+button:hover{
+	background-color: rgb(135, 206, 235);
+	color: rgb(255, 255, 255);
+}
+
+.livet{
+	text-align: center;
+	border: 0;
+}
+table tr{
+	padding: 10px;
+}
+table tr td{
+	padding: 5px;
+}
+.not{
+	margin-left: 5px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+.close{
+	text-align: right;
+}
+a:hover{
+	background-color: rgb(135, 206, 235);
+	color: rgb(255, 255, 255);
+}
+.closed{
+	padding: 1px;
+	text-decoration: none;
+	border: 0px;
+}
+body{
+	background-image: linear-gradient(170deg, rgb(182, 33, 254), #1fd1f9);
+}

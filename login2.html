@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+	<link rel="stylesheet" type="text/css" href="login2.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+	<title>login</title>
+</head>
+<body>
+    
+    <div class="container">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ffcb41e0-7103-480c-847c-a3787b34b8d1/de5g5ke-dabf816f-3a08-45d1-87f4-b7250d527ee6.png/v1/fill/w_1095,h_730,q_70,strp/jin_sakai_by_zyuureon_de5g5ke-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD04NTQiLCJwYXRoIjoiXC9mXC9mZmNiNDFlMC03MTAzLTQ4MGMtODQ3Yy1hMzc4N2IzNGI4ZDFcL2RlNWc1a2UtZGFiZjgxNmYtM2EwOC00NWQxLTg3ZjQtYjcyNTBkNTI3ZWU2LnBuZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.PPFx4oUMa9aX96EH1UwwMGZNaKT2fG9lslGWhQXcwmU" 
+        alt="g3.jpg" class= "image"/>
+        <div class="login-container">
+            <div class="signin">
+                <form action="#" class="sign-in-form" name="myForm">
+                    <h2 class="title">Sign In</h2>
+                    <div><input type="text" name="nama" id="nama" placeholder="Username"></div>
+                    <br>
+                    <div><input type="Password" name="password" id="Password" min="8" placeholder="password"></div>
+                    <br>
+					<div class="register-text"><a href="regristrasi.html">or regrister here</a></div>
+					<div class="button"><button onclick="validateForm()" class="btn solid">Login</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="img-container">
+        <div class="img left-panel">
+            <div class="konten">
+                <h2>GART</h2>
+                <p>Share your creativity</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+		function validateForm() {
+  		var x = document.forms["myForm"]["nama"].value;
+        var p = document.forms["myForm"]["password"].value;
+ 		if (x == "") {
+    	alert("Name must be filled out");
+    }else if (p == "") {
+        alert("Password must be filled out");
+    }else if (!x == "" && !p == "") {
+        window.open("Feeds.html");
+    }
+    	return false;
+  }
+
+</script>
+</body>
+</html>

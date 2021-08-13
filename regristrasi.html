@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+	<link rel="stylesheet" type="text/css" href="regristrasi.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+	<title>regristrasi</title>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="forum">
+			<form name="myForm" action=" ">
+			<h1 class="contact-heading">Sign Up</h1>
+			<div><label class="u">Username</label></div>
+			<div class="textbox"><input type="text" name="nama" id="nama"></div>
+			<br>
+			<div ><label class="u">Email</label></div>
+			<div class="textbox"><input type="text" name="email" id ="email"></div>
+			<br>
+			<div><label class="u">Password</label></div>
+			<div class="textbox"><input type="Password" name="password" id="password" min="8"></div>
+			<br>
+			<div><label class="u">Retype Password</label></div>
+			<div class="textbox"><input type="Password" name="cpassword" id="cpassword" min="8"></div>
+			</form>
+			<br>
+			<div class="b"><button onclick="validateForm()" class="button">Submit</button></div>
+		</div>
+	</div>
+	<script>
+		function validateForm() {
+			var nama = document.getElementById("nama").value;
+			var email = document.getElementById("email").value;
+			var pass = document.getElementById("password").value;
+			var cpass = document.getElementById("cpassword").value;
+
+	    if(nama===""){
+			alert("Kolom username wajib diisi");
+		}
+		else if(email===""){
+			alert("Kolom email wajib diisi");
+		}
+		else if(pass==="" && cpas===""){
+			alert("Password tidak boleh kosong");
+		}
+		else if(pass !== cpass){
+			alert("Password tidak sesuai");
+		}
+		else{
+			var konfir = window.confirm("Apakah anda yakin?");
+			var text="";
+			if(konfir === true){
+				window.open("Feeds.html")
+			}
+			document.getElementById("hasil").innerHTML = text;
+			}
+    }
+</script>
+</body>
+</html>

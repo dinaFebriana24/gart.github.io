@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feeds</title>
+	<link rel="stylesheet" type="text/css" href="feeds.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="feeds.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="grid-container">
+		<header>
+			<div class="gart"><strong>GART</strong></div>
+			<div class="cari"><input type="text" name="cari" placeholder="cari"  ></div>
+			<div><button onclick="upload()" class="notif">Upload</button></div>
+			<div><button onclick="openWin()" class="notif"><img src="notif.png" width="35" ></button></div>
+			<div><button onclick="profil()" class="notif"><img src="profil.png" width="30" > </button></div>
+			</header>
+		</div>
+		<main>
+			<div class="container">
+				<div class="title">
+					<h3>For You</h3>
+				</div>
+				<div class="gallery">
+					<div class="gallery-item" tabindex="0">
+						<img src="g8.jpg" class="gallery-image" alt="">
+						<div class="gallery-item-info">
+							<ul>
+								<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
+								<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+							</ul>
+						</div>
+					</div>
+					<div class="gallery-item" tabindex="0">
+						<img src="g7.jpg" class="gallery-image" alt="">
+						<div class="gallery-item-info">		
+							<ul>
+								<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 89</li>
+								<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 5</li>
+							</ul>	
+						</div>
+					</div>
+					<div class="gallery-item" tabindex="0">
+						<img src="g6.jpg" class="gallery-image" alt="">
+
+						<div class="gallery-item-info">
+							<ul>
+								<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 42</li>
+								<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+							</ul>
+						</div>
+					</div>
+					<div class="gallery-item" tabindex="0">
+						<img src="g4.jpg" class="gallery-image" alt="">
+						<div class="gallery-item-info">
+							<ul>
+								<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 38</li>
+								<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+							</ul>
+						</div>
+					</div>
+					<div class="gallery-item" tabindex="0">
+						<img src="g4.jpg" class="gallery-image" alt="">
+						<div class="gallery-item-info">
+							<ul>
+								<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 47</li>
+								<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+							</ul>
+						</div>
+					</div>
+					<div class="gallery-item" tabindex="0">
+						<img src="g5.jpg" class="gallery-image" alt="">
+						<div class="gallery-item-info">
+							<ul>
+								<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 94</li>
+								<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 3</li>
+							</ul>
+						</div>
+					</div>
+					<div class="gallery-item" tabindex="0">
+						<img src="g4.jpg" class="gallery-image" alt="">
+						<div class="gallery-item-info">
+							<ul>
+								<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 52</li>
+								<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 4</li>
+							</ul>
+						</div>
+					</div>
+		<div class="gallery-item" tabindex="0">
+			<img src="s4.jpg" class="gallery-image" alt="">
+			<div class="gallery-item-info">
+				<ul>
+					<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 66</li>
+					<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+				</ul>
+			</div>
+		</div>
+		<div class="gallery-item" tabindex="0">
+			<img src="g4.jpg" class="gallery-image" alt="">
+			<div class="gallery-item-info">
+				<ul>
+					<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 45</li>
+					<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+				</ul>
+			</div>
+		</div>
+		<div class="gallery-item" tabindex="0">
+			<img src="g1.jpg" class="gallery-image" alt="">
+			<div class="gallery-item-info">
+				<ul>
+					<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 34</li>
+					<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+				</ul>
+			</div>
+		</div>
+		<div class="gallery-item" tabindex="0">
+			<img src="s6.jpg" class="gallery-image" alt="">
+			<div class="gallery-item-info">
+				<ul>
+					<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 41</li>
+					<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+				</ul>
+			</div>
+		</div>
+		<div class="gallery-item" tabindex="0">
+			<img src="g5.jpg" class="gallery-image" alt="">
+			<div class="gallery-item-type">
+				<span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
+			</div>
+			<div class="gallery-item-info">
+				<ul>
+					<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 30</li>
+					<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</main>
+<footer><div></div></footer>
+</body>
+</html>

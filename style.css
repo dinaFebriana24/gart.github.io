@@ -1,0 +1,49 @@
+#g{
+	padding: 100px;
+	font-style: ;
+	font-size: 40px;
+}
+#us{
+	background-color: rgb(100, 149, 237);
+}
+#pass{
+	background-color: rgb(100, 149, 237);
+}
+#login{
+	border-color: rgb(62, 254, 255);
+}
+#username{
+	border-bottom: 0;
+	padding-bottom: 0;
+	padding-left: 10px;
+}
+#userTable{
+	padding-top: 0;
+	border-bottom: 0;
+	padding-right: 40px;
+	padding-left: 40px;
+	border-top:0;
+
+}
+#password{
+	border-bottom: 0;
+	border-top: 0;
+	padding-bottom: 0;
+	padding-left: 10px;
+}
+#passTable{
+	border-bottom: 0;
+	padding-right: 40px;
+	padding-left: 40px;
+	border-top:0;
+	padding-top: 0;
+}
+#lupaPassword{
+	border-top: 0;
+}
+#R{
+	background-color: rgb(62, 254, 255);
+}
+#table{
+	border-color: rgb(25, 25, 112);
+}
